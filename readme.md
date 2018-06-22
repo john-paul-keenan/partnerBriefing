@@ -10,14 +10,14 @@ This document is created to help you get everything setup on your computer to st
 These sessions will all be using Docker. Docker makes doing demos quick and painless
   - [Docker for Mac](https://docs.docker.com/docker-for-mac/install/#install-and-run-docker-for-mac)
   - [Docker for Windows 10](https://store.docker.com/editions/community/docker-ce-desktop-windows)<br />
-We distribute Kong and Kong's license through a third party tool called Bintray. We have created a shared account for you to use for this training. Please get in touch with your Kong contact person  if yo do not have access before the training starts.
+We distribute Kong and Kong's license through a third party tool called Bintray. We have created a shared account for you to use for this training. Please get in touch with your Kong contact person if you do not have access before the training starts.
 
 Let's pull the images so we have a local copy of them for testing. First, get your datastore. For these demos, we'll be using Postgres, but Cassandra would work just as well.
 ``
 docker pull postgres:9.6
 ``
 
-Now, let's pul a copy of Kong EE. This will require your Bintray access information<br />
+Now, let's pull a copy of Kong EE. This will require your Bintray access information<br />
 ```
 docker login -u demo-user@kong -p <API_KEY> kong-docker-kong-enterprise-edition-docker.bintray.io
 docker pull kong-docker-kong-enterprise-edition-docker.bintray.io/kong-enterprise-edition:0.32-alpine
