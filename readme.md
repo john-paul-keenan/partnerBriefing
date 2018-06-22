@@ -9,7 +9,7 @@ This document is created to help you get everything setup on your computer to st
 
 These sessions will all be using Docker. Docker makes doing demos quick and painless
   - [Docker for Mac](https://docs.docker.com/docker-for-mac/install/#install-and-run-docker-for-mac)
-  - [Docker for Windows 10](https://store.docker.com/editions/community/docker-ce-desktop-windows)
+  - [Docker for Windows 10](https://store.docker.com/editions/community/docker-ce-desktop-windows)<br />
 We distribute Kong and Kong's license through a third party tool called Bintray. We have created a shared account for you to use for this training. Please get in touch with your Kong contact person  if yo do not have access before the training starts.
 
 Let's pull the images so we have a local copy of them for testing. First, get your datastore. For these demos, we'll be using Postgres, but Cassandra would work just as well.
@@ -30,7 +30,8 @@ export KONG_LICENSE_DATA='{"license":{"signature":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ### Other Handy Tools we use Often
 
 While cURL will work perfectly using Kong, it's not the most human friendly when doing a demo for potential customers. To get a better visual response, we will use a tool called [HTTPie]
-(https://httpie.org/). To install, use the correct command
+(https://httpie.org/).
+#### Installing HTTPie
 ```
 ### macOS
 brew install httpie
@@ -49,6 +50,6 @@ pip install --upgrade httpie
 
 Assuming everything installed and pulled without issue, you're ready to get started.
 
-## Using Kong
+## Next Steps
 
-Now that we have everything all setup, we're ready to get started. Head over to [https://github.com/john-paul-keenan/kong](https://github.com/john-paul-keenan/kong) to find the commands.
+Now, you have everything installed on your local machine you will need to use Kong. I'll be back in another session to do some demos with you, but if you want to take an early look, please visit [https://github.com/john-paul-keenan/kong](https://github.com/john-paul-keenan/kong)
